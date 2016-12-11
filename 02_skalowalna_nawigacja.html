@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skalowalna nawigacja</title>
+    <style>
+
+        nav[role=navigation] ul{
+            margin: 0;
+            padding: 10px 0 0 46px;
+            float: left;
+            width: 80%;
+            background: url(black_pixel.png) repeat-x bottom left;
+            background-color: #FFCB2D;
+            list-style: none;
+        }
+        nav[role=navigation] li {
+            float: left;
+            margin: 0 1px 0 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 80%;
+        }
+        nav[role=navigation] ul li a {
+            float: left;
+            display: block;
+            margin: 0;
+            padding: 4px 8px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #9b8748;
+            border-bottom: none;
+            background: #f9e9a9;
+        }
+
+        nav[role=navigation] ul li a:hover {
+            color: #333333;
+            padding-bottom: 5px;
+            border-color: #727377;
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav role="navigation">
+        <ul>
+            <li id="t-intro"><a href="#">Intro</a>
+            <li id="t-about"><a href="#">About</a>
+            <li id="t-news"><a href="#">News</a>
+            <li id="t-sponsors"><a href="#">Sponsorkowe</a>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomysłowe rozmieszczenie elementów</title>
+    <style>
+        body {
+            font-size:medium;
+            font-family:Arial, sans-serif
+        }
+        #widoczki {
+            float: left;
+            width: 300px;
+            padding: 10px 0;
+            border: 2px solid #c8cdd2;
+        }
+        #widoczki dl {
+            width: 260px;
+            margin: 10px 20px;
+            padding: 0;
+        }
+        #widoczki dl:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        #widoczki dt {
+            float: right;
+            width: 162px;
+            margin:0;
+            padding: 0;
+            font-size: 130%;
+            letter-spacing: 1px;
+            color: #627081
+        }
+        #widoczki dd {
+            margin: 0 0 0 98px;
+            padding: 0;
+            font-size: 85%;
+            line-height: 1.5em;
+            color: #666666;
+        }
+        #widoczki dl dd.img {
+            margin: 0;
+        }
+        #widoczki dd.img img {
+            float: left;
+            margin: 0 8px 0 0;
+            padding: 4px;
+            border: 1px solid #d9e0e6;
+            border-bottom-color: #c8cdd2;
+            border-right-color: #c8cdd2;
+            background: #ffffff;
+            box-shadow: 1px 1px 3px rgba(0,0,0, .12);
+        }
+        #widoczki .alt dt {
+            float: left;
+        }
+        #widoczki .alt dd {
+            margin: 0 98px 0 0;
+        }
+        #widoczki .alt dd.img img {
+            float: right;
+            margin: 0 0 0 8px;
+        }
+    </style>
+</head>
+<body>
+<article id="widoczki">
+    <dl>
+        <dt>Pierwszy widoczek</dt>
+        <dd class="img"><img src="img/1.jpg" width="80" height="80" alt="Pierwszy widoczek" /></dd>
+        <dd>Opis pierwszego widoczka</dd>
+    </dl>
+    <dl class="alt">
+        <dt>A to normalnie o tej porze drugi widoczek</dt>
+        <dd class="img"><img src="img/2.jpg" width="80" height="80" alt="Drugi widoczek" /></dd>
+        <dd>Jak widać na załączonym obrazku zajebisty widoczek.</dd>
+    </dl>
+    <dl>
+        <dt>Pierścienie, pierścionki</dt>
+        <dd class="img"><img src="img/3.jpg" width="80" height="80" alt="Saturn" /></dd>
+        <dd>Nie wiem co napisać, więc nic nie napiszę, bo mi się nie chce jak cholera. O!</dd>
+    </dl>
+</article>
+</body>
+</html>
